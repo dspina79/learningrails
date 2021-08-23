@@ -20,6 +20,11 @@
   <body>
     <%= render 'home/header' %>
     <div class="container" style="margin-top: 15px">
+    <br/>
+      <%= if notice %>
+        <%= render 'layouts/alerts' %>
+      <%= end %>
+
       <%= yield %>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
